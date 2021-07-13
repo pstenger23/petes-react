@@ -60,3 +60,14 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+.project-link {
+  color: #e6ddc5;
+}
+.img-thumbnail {
+  width: auto;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.navActive {
+  color: #00628a;
+}
