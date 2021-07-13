@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  background-color: #202020;
+  color: whitesmoke;
+}
+header {
+  padding: 15px;
+  background-color: #e6ddc5;
+  
+}
+.abt-page {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: #202020;
+}
+h1 {
+  padding-left: 20px;
+  
+}
+h2 {
+  padding: 15px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  
+}
+ul {
+  list-style-type: none;
+}
+.profile {
+  padding: 30px;
+  border: 2px solid #e6ddc5;
+  margin: 15px;
+}
+.about-section {
+  margin-left: 15px;
+  margin-right: 25px;
+  font-size: 24px;
+}
+.footer-link {
+  color:#e6ddc5;
+}
+footer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
