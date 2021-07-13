@@ -6,10 +6,11 @@ function Nav(props) {
         aboutSelected,
         setAboutSelected,
         portfolioSelected,
-        setPortfolioSeleted,
+        setPortfolioSelected,
         contactSelected,
         setContactSelected
     } = props;
+    
     return(
         <header>
             <h1>
@@ -17,26 +18,26 @@ function Nav(props) {
             </h1>
             <nav>
                 <ul className="flex">
-                    <li className={`nav-item ${aboutSelected && 'navActive'}`}>
-                        <span href="#about" onClick={() => {
+                    <li className={`nav-item ${aboutSelected ? ('navActive') : ('')}`}>
+                        <a href="#about" onClick={() => {
                             setAboutSelected(true);
                             setContactSelected(false);
-                            setPortfolioSeleted(false);
-                            }}>About</span>
+                            setPortfolioSelected(false);
+                            }}>About</a>
                     </li>
-                    <li className={`nav-item ${portfolioSelected && 'navActive'}`} >
-                        <span href="#portfolio" onClick={() => {
-                            setPortfolioSeleted(true);
+                    <li className={`nav-item ${portfolioSelected ? ('navActive') : ('')}`} >
+                        <a href="#portfolio" onClick={() => {
+                            setPortfolioSelected(true);
                             setAboutSelected(false);
                             setContactSelected(false);
-                            }}>Portfolio</span>
+                            }}>Portfolio</a>
                     </li>
-                    <li className={`nav-item ${contactSelected && 'navactive'}`}>
-                        <span onCLick={() => {
+                    <li className={`nav-item ${contactSelected ? ('navactive') : ('')}`}>
+                        <a href="#contact" onClick={() => {
                             setContactSelected(true);
                             setAboutSelected(false);
-                            setContactSelected(false);
-                            }}>Contact</span>
+                            setPortfolioSelected(false);
+                            }}>Contact</a>
                     </li>
                     <li className="nav-item">
                         <a href="#resume">Resume</a>

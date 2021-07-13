@@ -35,17 +35,19 @@ function Contact() {
     }
     return(
         <section className="contact">
+            
             <form className="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor='name'>Name</label>
+            <h2 class='contact-title'>Please reach out!</h2>
+                <div className="inputs">
+                    <label htmlFor='name'>Name:</label>
                     <input type='text' name='name' defaultValue={name} onBlur={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor='email'>Email</label>
+                <div className="inputs">
+                    <label htmlFor='email'>Email:</label>
                     <input type='text' name='email' defaultValue={email} onBlur={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor='message'>Message</label>
+                <div className="inputs">
+                    <label htmlFor='message'>Message:</label>
                     <textarea name='message' rows='5' defaultValue={message} onBlur={handleChange}></textarea>
                 </div>
                 {errorMessage && (
