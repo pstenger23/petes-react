@@ -16,12 +16,20 @@ body {
   color: whitesmoke;
 }
 header {
-  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   background-color: #e6ddc5;
   
 }
+.nav-item {
+  padding: 15px;
+}
 .abt-page {
   display: flex;
+}
+.page {
+  padding-bottom: 150px;
 }
 a {
   text-decoration: none;
@@ -32,8 +40,9 @@ h1 {
   
 }
 h2 {
-  padding: 15px;
+  font-size: 32px;
 }
+
 .flex {
   display: flex;
   justify-content: space-around;
@@ -44,13 +53,18 @@ ul {
 }
 .profile {
   padding: 30px;
-  border: 2px solid #e6ddc5;
   margin: 15px;
 }
 .about-section {
+  padding-top: 15px;
   margin-left: 15px;
   margin-right: 25px;
   font-size: 24px;
+  color: #e6ddc5;
+}
+#about {
+  padding-left: 50px;
+  color: #e6ddc5;
 }
 .footer-link {
   color:#202020;
@@ -58,7 +72,7 @@ ul {
 }
 footer {
   padding-bottom: 50px;
-  position: absolute;
+  position: static;
   width: 100%;
   bottom: 0;
   display: flex;
@@ -89,6 +103,9 @@ label {
 .contact-title {
   color: #202020;
 }
+.project-text {
+  color: #202020;
+}
 .inputs {
   display: flex;
   padding: 25px;
@@ -96,6 +113,7 @@ label {
 .contact {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 95px;
 }
 .contact-form {
   display: flex;
@@ -106,4 +124,17 @@ label {
   align-items: center;
   border-radius: 15px;
   width: 33%;
+}
+.project {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 50px;
+  background-color: #e6ddc5;
 }
