@@ -138,3 +138,6 @@ label {
   margin: 50px;
   background-color: #e6ddc5;
 }
+.days {
+  display: flex;
+}
